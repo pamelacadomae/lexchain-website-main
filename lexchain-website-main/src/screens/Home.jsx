@@ -1,10 +1,28 @@
 import React from 'react';
 import '../styles/Home.css';
+import logo from '../assets/logo.png';
+import animatedBg from '../assets/ai-face.gif';
 
 const Home = () => {
   return (
-    <div id="wrapper-1639">
-      {/* Services Section */}
+    <div id="home">
+      {/* Hero Section */}
+      <div className="hero-section">
+        <img src={animatedBg} alt="AI Background" className="hero-bg" />
+        <div className="hero-overlay">
+          <header className="hero-header">
+            <img src={logo} alt="Logo" className="hero-logo" />
+            <nav className="hero-nav">Home</nav>
+          </header>
+          <div className="hero-content">
+            <h1>Hello, Welcome to Lexchain!</h1>
+            <p>Our AI-powered solutions change the way you work.</p>
+            <button className="hero-btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Existing Services Section */}
       <section id="services-1639">
         <div className="cs-container">
           <div className="cs-title-wrapper">
@@ -88,7 +106,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Side by Side Section */}
+      {/* Existing Courses Section */}
       <section id="sbs-1639">
         <div className="cs-container">
           <div className="cs-content">
